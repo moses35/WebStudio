@@ -14,6 +14,9 @@
   }
   &__link {
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
   &__text {
     font-size: 16px;
@@ -21,6 +24,7 @@
     color: $primaty-text-color;
     text-decoration: none;
   }
+
   &__overlay {
     position: relative;
     overflow: hidden;
@@ -48,6 +52,7 @@
     border-right: 1px solid $border-portfolio;
     border-left: 1px solid $border-portfolio;
     padding: 20px 24px;
+    flex-grow: 1;
   }
 
   &__title {
