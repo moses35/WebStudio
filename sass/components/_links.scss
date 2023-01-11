@@ -6,10 +6,13 @@
   }
 }
 .links-block {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     margin-left: 0;
-    margin-right: auto;
+    margin-right: 0;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     margin-right: 94px;
@@ -33,7 +36,7 @@
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  margin-bottom: 60px;
+
   align-items: center;
   justify-content: center;
   background-color: $links-bg;

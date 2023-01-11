@@ -14,6 +14,13 @@
   &__nav {
     display: flex;
     align-items: center;
+    width: 100%;
+    @media screen and (min-width: 768px) {
+      width: 0;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 0;
+    }
   }
 
   &__logo {
@@ -24,10 +31,14 @@
     line-height: 1.17;
     text-decoration: none;
 
-    margin-right: 93px;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      margin-right: 93px;
+    }
     @media screen and (min-width: 1200px) {
       font-size: 26px;
       line-height: 2;
+      margin-right: 93px;
     }
   }
 
@@ -44,7 +55,7 @@
     }
     @media screen and (min-width: 1200px) {
       flex-direction: row;
-      align-items: baseline;
+      align-items: center;
       justify-content: center;
     }
   }
@@ -63,7 +74,7 @@
       padding-top: 32px;
       padding-bottom: 32px;
       justify-content: center;
-      align-items: baseline;
+      align-items: ce;
       &:not(:last-child) {
         margin-bottom: 0;
       }
@@ -111,9 +122,6 @@
     &:focus {
       color: $accent-color;
       fill: $accent-color;
-    }
-    @media screen and (min-width: 1200px) {
-      align-items: baseline;
     }
   }
   &__item:not(:last-child) {
@@ -233,13 +241,14 @@
   }
 }
 .header__toggle {
-  position: absolute;
+  /*position: absolute;
   top: 22px;
-  right: 23px;
+  right: 163px;*/
   background-color: transparent;
   border: none;
   padding: 0;
   margin: 0;
+  margin-right: 8px;
   &:hover,
   &:focus {
     fill: $accent-color;
