@@ -49,6 +49,7 @@
     border-left: 1px solid $border-portfolio;
     padding: 20px 24px;
   }
+
   &__title {
     color: $title-text-color;
     margin-top: 0;
@@ -61,6 +62,8 @@
   }
   & img {
     display: block;
+    width: 100%;
+    height: auto;
   }
   &__projects {
     width: calc((100% - 60px) / 3);
